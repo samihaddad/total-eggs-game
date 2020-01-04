@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--<meta name="viewport" content="width=100%, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />-->
+        <meta name="viewport" content="maximum-scale=1,user-scalable=no" /> 
+        <meta name="HandheldFriendly" content="true">
+        <title>TOTAL</title>
+        <script src="js/jquery-2.1.4.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body style="background-image: url('images/Background.png');">
+                <form id="gameForm" action="/game.php" autocomplete="=off" method="POST">
+            <!--            <div class=" existSurprise   ">
+                            <div class="bubbleDesktop "></div>
+                        </div> -->
+                        <!--		       <div class="outBubble existSurprise ">
+                                            <div class="bubbleDesktop "></div>
+                                        </div> -->
+
+
+
+
+            <!--                            <div class="outBubble existSurprise existSurprise2 surprise ">
+                                            <div class="bubbleDesktop"></div>
+                                        </div>        -->
+
+            <input type="hidden" name="scoreHidden" id="scoreHidden" value="" />
+             <input type="hidden" name="cioHidden" id="cioHidden" value="0" />
+   
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <label class="fontScore" id="lblminutesTimer"></label>
+                    <label class="fontScore">:</label>
+                    <label class="fontScore" id="lblSecondsTimer"></label>
+                </div>
+                <!--                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <label class="fontScore" id="score" style="float:right">0</label>
+                                </div>-->
+            </div>
+            <div id="timerDiv" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            </div>
+
+            <!-- gas station -->
+            <img id="imgGasStation" class="imageStation"  src="images/Game-Total-dec.gif" alt=""/>
+
+            <!--total logo-->
+            <img style="position: fixed;bottom:0px;right: 0px" src="images/Logo Total.png" id="imgTotalIcon"  />     </div>
+
+
+        <!-- from here the bubbles appear -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="position: fixed; bottom: 0">
+            <div class="col-lg-5 col-md-5  col-sm-5 col-xs-5">&nbsp;</div>
+
+            <div id="bubbles" class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            </div>
+
+            <div class="col-lg-6 col-md-6  col-sm-6 col-xs-6">&nbsp;</div>
+        </div>
+    </form>
+</body>
+
+<script src="js/Bubble.js"></script>
+
+</html>
